@@ -1,0 +1,10 @@
+# robots.txt for 
+
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
