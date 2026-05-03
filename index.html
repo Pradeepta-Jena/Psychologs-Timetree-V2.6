@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychologs Timetree V2.6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="app-title">Psychologs Timetree</h1>
+                <div class="header-divider"></div>
+                <div class="header-controls">
+                    <!-- Date Search Toggle (New) -->
+                    <button class="header-control-btn date-search-toggle" id="dateSearchToggle" aria-label="Open date search calendar">
+                        🗓️
+                    </button>
+                    
+                    <!-- Theme Toggle -->
+                    <button class="header-control-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon light-icon">☀️</span>
+                        <span class="theme-icon dark-icon">🌙</span>
+                    </button>
+                    
+                    <!-- Music Player Controls -->
+                    <div class="music-player">
+                        <button class="music-btn" id="prevBtn" aria-label="Previous track">⏮️</button>
+                        <button class="music-btn play-pause" id="playPauseBtn" aria-label="Play/Pause">▶️</button>
+                        <button class="music-btn" id="nextBtn" aria-label="Next track">⏭️</button>
+                        <button class="music-btn" id="muteBtn" aria-label="Mute/Unmute">🔊</button>
+
+                        <!-- Music Playlist Toggle -->
+                        <button class="music-btn" id="playlistToggleBtn" aria-label="Open Playlist">📜</button>
+
+                    <!-- Music Track List Dropdown -->
+                    <div id="musicPlaylist" class="music-playlist-dropdown">
+                    <div class="playlist-header">Select Track</div>
+                    <ul id="trackList">
+        <li class="track-item active" data-index="0">Track 1</li>
+        <li class="track-item" data-index="1">Track 2</li>
+        <li class="track-item" data-index="2">Track 3</li>
+        <li class="track-item" data-index="3">Voice 1</li>
+        <li class="track-item" data-index="4">Voice 2</li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Date Search Calendar (New Element) -->
+    <div id="dateSearchCalendar" class="date-search-calendar" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="calendarDisplayMonth">
+        <div class="calendar-header">
+            <button class="calendar-nav-btn" id="prevMonthBtn" aria-label="Previous Month">‹</button>
+            <div class="calendar-display-month" id="calendarDisplayMonth"></div>
+            <button class="calendar-nav-btn" id="nextMonthBtn" aria-label="Next Month">›</button>
+        </div>
+        <div class="calendar-controls">
+            <select id="calendarYearSelect" aria-label="Select Year"></select>
+            <select id="calendarMonthSelect" aria-label="Select Month"></select>
+        </div>
+        <div class="calendar-weekdays">
+            <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        <div class="calendar-days" id="calendarDays"></div>
+        <div class="calendar-footer">
+            <button class="btn btn-primary" id="goToSelectedDateBtn">Go to Date</button>
+            <button class="btn btn-secondary" id="closeCalendarBtn">Close</button>
+        </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <nav class="tabs-nav container">
+        <button class="tab-link active" onclick="openTab(event, 'dept-content')">Department Memories</button>
+        <button class="tab-link" onclick="openTab(event, 'seniors-content')">Batch: PSYC24</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            
+            <!-- Tab 1: Department Memories (Original Content Wrapped) -->
+            <div id="dept-content" class="tab-pane active">
+                <!-- Random Memory Slideshow Section -->
+                <section class="slideshow-section">
+                    <h2 class="section-title">Department Memories</h2>
+                    <div class="slideshow-container">
+                        <div class="slideshow-wrapper" id="slideshowWrapper">
+                            <div class="slide active" id="currentSlide" role="button" tabindex="0" aria-label="Tap to view this memory in timeline">
+                                <div class="slide-image-container">
+                                    <img src="" alt="" class="slide-image" id="slideImage" onerror="handleImageError(this)">
+                                </div>
+                                <div class="slide-content">
+                                    <h3 class="slide-title" id="slideTitle"></h3>
+                                    <p class="slide-date" id="slideDate"></p>
+                                    <p class="slide-description" id="slideDescription"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideshow-indicators" id="slideshowIndicators"></div>
+                    </div>
+                </section>
+
+                <!-- Timeline Section -->
+                <section class="timeline-section">
+                    <h2 class="section-title">Narrative Timeline</h2>
+                    <div class="timeline-container" id="timelineContainer">
+                        <!-- Timeline items will be dynamically generated -->
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tab 2: Know Your Seniors (New Content) -->
+            <div id="seniors-content" class="tab-pane">
+                <section class="slideshow-section">
+                    <h2 class="section-title">Senior's Spotlights</h2>
+                    <div class="slideshow-container">
+                        <div class="slideshow-wrapper" id="slideshowWrapperSeniors">
+                            <div class="slide active" id="currentSlideSeniors" role="button" tabindex="0">
+                                <div class="slide-image-container">
+                                    <img src="" alt="" class="slide-image" id="slideImageSeniors" onerror="handleImageError(this)">
+                                </div>
+                                <div class="slide-content">
+                                    <h3 class="slide-title" id="slideTitleSeniors"></h3>
+                                    <p class="slide-date" id="slideDateSeniors"></p>
+                                    <p class="slide-description" id="slideDescriptionSeniors"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideshow-indicators" id="slideshowIndicatorsSeniors"></div>
+                    </div>
+                </section>
+
+                <section class="timeline-section">
+                    <h2 class="section-title">Meet Your Seniors</h2>
+                    <div class="timeline-container" id="timelineContainerSeniors">
+                        <!-- Seniors timeline items will be dynamically generated -->
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2026 Psychologs Timetree. 
+                <span class="footer-subtitle">A Prototype Webpage by Pradeepta Jena </span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Audio Elements -->
+    <audio id="backgroundAudio" preload="metadata" loop>
+        <source src="BGM/M1.mp3" type="audio/mpeg">
+        <source src="./assets/audio/background-1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="track2" preload="metadata" loop>
+        <source src="BGM/M2.m4a" type="audio/mpeg">
+        <source src="./assets/audio/background-2.ogg" type="audio/ogg">
+    </audio>
+
+    <audio id="track3" preload="metadata" loop>
+        <source src="BGM/M3.mp3" type="audio/mpeg">
+        <source src="./assets/audio/background-3.ogg" type="audio/ogg">
+    </audio>
+
+    <audio id="track4" preload="metadata" loop>
+        <source src="BGM/L1.m4a" type="audio/mpeg">
+        <source src="./assets/audio/background-4.ogg" type="audio/ogg">
+    </audio>
+
+    <audio id="track5" preload="metadata" loop>
+        <source src="BGM/V2.opus" type="audio/mpeg">
+        <source src="./assets/audio/background-5.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- Scroll To Top/Bottom Buttons -->
+    <button id="scrollToTopBtn" class="scroll-btn" aria-label="Scroll to top">⬆️</button>
+    <button id="scrollToBottomBtn" class="scroll-btn" aria-label="Scroll to bottom">⬇️</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
