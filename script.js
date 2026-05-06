@@ -266,7 +266,7 @@ const seniorsData = [
     "id": 101,
     "rollNumber": "PSYC24-001",
     "title": "Abhipsa sarangi",
-    "description": "Desi girl😍/Serene heart / princess of positivity/ Kab aaye kab jaaye",
+    "description": "Desi Dreamer",
     "imageUrl": "KYS/Abhipsa sarangi PSYC24-001.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -274,7 +274,7 @@ const seniorsData = [
     "id": 102,
     "rollNumber": "PSYC24-002",
     "title": "Aishwarya Sahoo",
-    "description": "Radiant / genz AISH RAI",
+    "description": "Main Character",
     "imageUrl": "KYS/Aishwarya Sahoo PSYC24-002 .jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "square"
   },
@@ -282,7 +282,7 @@ const seniorsData = [
     "id": 103,
     "rollNumber": "PSYC24-003",
     "title": "Akankhya Kanungo",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description":"Babygirl Energy",
     "imageUrl": "KYS/Akankhya Kanungo PSYC24-003.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
