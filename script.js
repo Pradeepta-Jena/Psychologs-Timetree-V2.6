@@ -290,7 +290,7 @@ const seniorsData = [
     "id": 104,
     "rollNumber": "PSYC24-004",
     "title": "Alaka Pattnaik",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Angel Face",
     "imageUrl": "KYS/Alaka Pattnaik PSYC24-004.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -298,7 +298,7 @@ const seniorsData = [
     "id": 105,
     "rollNumber": "PSYC24-005",
     "title": "Alpha Sethi",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Human Therapy",
     "imageUrl": "KYS/Alpha Sethi PSYC24-005.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -306,7 +306,7 @@ const seniorsData = [
     "id": 106,
     "rollNumber": "PSYC24-007",
     "title": "Anchal Swain",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Travel Addict",
     "imageUrl": "KYS/Anchal Swain PSYC24-007.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -314,7 +314,7 @@ const seniorsData = [
     "id": 107,
     "rollNumber": "PSYC24-008",
     "title": "Ankita Kujur",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Tiny Spark",
     "imageUrl": "KYS/Ankita Kujur PSYC24-008.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -322,7 +322,7 @@ const seniorsData = [
     "id": 108,
     "rollNumber": "PSYC24-009",
     "title": "Ansh Tudu",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Camera King",
     "imageUrl": "KYS/Ansh Tudu PSYC24-009.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -330,14 +330,14 @@ const seniorsData = [
     "id": 109,
     "rollNumber": "PSYC24-010",
     "title": "Arpita Sahoo",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Sleep Mode",
     "imageUrl": "KYS/Arpita Sahoo PSYC24-010.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },{
     "id": 110,
     "rollNumber": "PSYC24-011",
-    "title": "Binati Bibhusita",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "title": "Binati Bibhusita Sa",
+    "description": "Hype Queen",
     "imageUrl": "KYS/Binati Bibhusita Sa PSYC24-011.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -345,7 +345,7 @@ const seniorsData = [
     "id": 111,
     "rollNumber": "PSYC24-012",
     "title": "Chandan Kumar Sen",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Full Drama",
     "imageUrl": "KYS/Chandan Kumar Sen PSYC24-012.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -353,7 +353,7 @@ const seniorsData = [
     "id": 112,
     "rollNumber": "PSYC24-013",
     "title": "Chandini Hikaka",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Lost Soul",
     "imageUrl": "KYS/Chandini Hikaka PSYC24-013.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -361,7 +361,7 @@ const seniorsData = [
     "id": 113,
     "rollNumber": "PSYC24-014",
     "title": "Deepasmita Bhue",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Front Bench Mafia",
     "imageUrl": "KYS 2/Deepasmita Bhue PSYC24-014.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -369,7 +369,7 @@ const seniorsData = [
     "id": 114,
     "rollNumber": "PSYC24-015",
     "title": "Esha Singh",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Hidden Chaos",
     "imageUrl": "KYS 2/Esha Singh PSYC24-015.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -377,7 +377,7 @@ const seniorsData = [
     "id": 115,
     "rollNumber": "PSYC24-016",
     "title": "Falguni Raul",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Food Lover",
     "imageUrl": "KYS 2/Falguni Raul PSYC24-016.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -385,7 +385,7 @@ const seniorsData = [
     "id": 116,
     "rollNumber": "PSYC24-017",
     "title": "Hitesh Kutruka",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Mystry Mode",
     "imageUrl": "KYS 2/Hitesh Kutruka PSYC24-017.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -393,7 +393,7 @@ const seniorsData = [
     "id": 117,
     "rollNumber": "PSYC24-018",
     "title": "Itishree Pradhan",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Silent Bomb",
     "imageUrl": "KYS 2/Itishree Pradhan PSYC24-018.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -401,7 +401,7 @@ const seniorsData = [
     "id": 118,
     "rollNumber": "PSYC24-019",
     "title": "Jajnaseni Das",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Beauty Glow",
     "imageUrl": "KYS 2/Jajnaseni Das PSYC24-019.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -409,7 +409,7 @@ const seniorsData = [
     "id": 119,
     "rollNumber": "PSYC24-020",
     "title": "Jashaswinee Jiban Dash",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Laugh Machine",
     "imageUrl": "KYS 2/Jashaswinee Jiban Dash PSYC24-020.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
@@ -417,7 +417,7 @@ const seniorsData = [
     "id": 120,
     "rollNumber": "PSYC24-021",
     "title": "Manosmita Pattanaik",
-    "description": "The BA20 batch that laid the foundation for our current departmental culture.",
+    "description": "Hustle Queen",
     "imageUrl": "KYS 2/Manosmita Pattanaik PSYC24-021.jpg", // Placeholder - replace with actual senior photo
     "aspectRatio": "portrait"
   },
