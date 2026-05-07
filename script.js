@@ -13,8 +13,8 @@ const timelineData = [
   {
     "id": 2,
     "date": "2024-11-13",
-    "title": "A new beginning with a selfie",
-    "description": "Greetings, Human. I am the Narrator, your guide & light to this Sacred Timeline from the Universe 696. Here we'll observe some fascinating memories from the Department of Psychology.",
+    "title": "From Abhipsa sarangi",
+    "description": "We didn’t realize we were making memories… we were just living moments that would one day mean everything.",
     "imageUrl": "C24/13.11.24 Our Freshers 2.jpg",
     "aspectRatio": "square"
   },
